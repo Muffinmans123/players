@@ -1,0 +1,246 @@
+/* tagged.css */
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap');
+
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+    background: #232323;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+
+#color-picker, #color-hex {
+    width: 198px; /* Set the desired width */
+    height: 36px; /* Set the desired height */
+    background: #232323;
+    border: 1px solid #1E1E1E;
+    color: white;
+    font-size: 16px;
+    font-family: 'Mulish', sans-serif;
+    padding: 4px 4px;
+    box-sizing: border-box;
+    display: inline-block; /* Ensure they are inline elements */
+    vertical-align: middle; /* Align them vertically */
+}
+
+#steam-id-input {
+    width: 400px;
+    height: 150px;
+    background: #232323;
+    border: 1px solid #1E1E1E;
+    color: white;
+    font-size: 16px;
+    font-family: 'Mulish', sans-serif;
+    padding: 8px;
+    box-sizing: border-box;
+    resize: none;
+    margin-bottom: 8px;
+}
+
+#buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+#input-buttons-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+#steam-id-input::placeholder {
+    color: #939393;
+}
+
+button {
+    background: #1E1E1E;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: 'Mulish', sans-serif;
+    margin: 4px 0;
+}
+
+button:hover {
+    background: #252525;
+}
+
+button:active {
+    background: #2e2e2e;
+}
+
+#wrapper {
+    width: 75%;
+    font-family: 'Mulish', sans-serif;
+    background: #2C2C2C;
+    height: min(100vh, max-content);
+    position: relative;
+}
+
+#tagged-steamids-wrapper h2 {
+    text-align: center;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: bold;
+    background: #171717;
+}
+
+#title {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 16px 24px;
+    font-size: 24px;
+    flex-grow: 1;
+}
+
+.icon img {
+    width: 22px;
+}
+
+.icon:hover {
+    background: #252525;
+    cursor: pointer;
+}
+
+.icon:active {
+    background: #2e2e2e;
+}
+
+header img {
+    width: 64px;
+}
+
+input {
+    width: 168px;
+    height: 36px;
+    background: #232323;
+    border: 0px;
+    text-align: center;
+    font-size: 16px;
+    outline: 0px;
+    color: white;
+    font-family: 'Mulish', sans-serif;
+    padding: 4px 12px;
+}
+
+#server {
+    display: flex;
+    padding: 24px;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 16px;
+    background: #1E1E1E;
+    gap: 12px;
+}
+
+section {
+    background: #171717;
+    display: flex;
+    gap: 16px;
+    padding: 0 24px 24px 24px;
+}
+
+#search {
+    text-align: left;
+    flex-grow: 1;
+}
+
+.refresh-icon {
+    width: 64px;
+    text-align: right;
+}
+
+table {
+    font-size: 16px;
+    border-spacing: 0;
+    width: 100%;
+}
+
+th, td {
+    text-align: center;
+    padding: 8px;
+    background: #171717;
+    color: white;
+}
+
+th {
+    background: #171717;
+}
+
+tr {
+    display: table-row;
+    padding: 16px 96px;
+    justify-content: space-between;
+}
+
+td {
+    text-align: center;
+    font-weight: 400;
+    background: #2C2C2C;
+}
+
+table tr:nth-child(odd) td {
+    background: #262626;
+}
+
+.table-id {
+    width: 20%;
+}
+
+.table-icon {
+    width: 10%;
+}
+
+.table-color {
+    width: 10%;
+}
+
+.table-no {
+    width: 10%;
+}
+
+.table-actions {
+    width: 10%;
+}
+
+@media (max-width: 1200px) {
+    #wrapper {
+        width: 100%;
+    }
+
+    header {
+        gap: 12px;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    #title {
+        padding: 24px 24px 0 24px;
+    }
+
+    #server {
+        padding: 0 24px 24px 24px;
+    }
+
+    tr {
+        padding: 16px 16px;
+    }
+}
+
+a {
+    text-decoration: none;
+}

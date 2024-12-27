@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <title>Manage Tagged Steam IDs</title>
+ <link rel="stylesheet" href="css/index.css" />
+ <link rel="stylesheet" href="css/tagged.css" />
+ <script src="js/tagged-steamids.js" type="module"></script>
+</head>
+<body>
+<div id="wrapper">
+ <header>
+  <div id="title">
+   <img id="server-icon" src="https://fivem.net/favicon.png" alt="Server Icon" />
+   <span id="server-name">Manage Tagged Steam IDs</span>
+  </div>
+ </header>
+ <section>
+  <div id="color-picker-container">
+    <input type="color" id="color-picker" value="#ff0000" />
+    <input type="text" id="color-hex" value="#ff0000" />
+    <div id="input-buttons-container">
+      <textarea id="steam-id-input" placeholder="Enter Steam IDs (one per line)"></textarea>
+      <div id="buttons">
+        <button id="apply-color">Add</button>
+        <input type="text" id="group-name-input" placeholder="Enter Group Name" />
+        <button id="apply-group-name">Apply Group Name</button>
+      </div>
+    </div>
+  </div>
+</section>
+ <div id="main-content">
+  <div id="tagged-steamids-wrapper">
+   <h2>Tagged Steam IDs</h2>
+   <table id="tagged-steamids-table">
+    <thead>
+     <tr>
+      <th class="table-no">No.</th>
+      <th class="table-id">Steam ID</th>
+      <th class="table-icon">Steam</th>
+      <th class="table-color">Color</th>
+      <th class="table-actions">Actions</th>
+     </tr>
+    </thead>
+    <tbody>
+     <!-- Tagged Steam IDs will be rendered here -->
+    </tbody>
+   </table>
+  </div>
+ </div>
+</div>
+</body>
+</html>
